@@ -24,7 +24,7 @@ dataset, define the column structure as a dictionary and use a helper method.
 
 ```python
 from flair.data import TaggedCorpus
-from flair.data_fetcher import NLPTaskDataFetcher
+from flair.data_fetcher import NLPTaskDataFetcher, NLPTask
 
 # define columns
 columns = {0: 'text', 1: 'pos', 2: 'ner'}
@@ -88,7 +88,7 @@ Attention: A text in a line can have multiple sentences. Thus, a `Sentence` obje
 sentences.
 
 ```python
-from flair.data_fetcher import NLPTaskDataFetcher
+from flair.data_fetcher import NLPTaskDataFetcher, NLPTask
 from pathlib import Path
 
 # use your own data path
